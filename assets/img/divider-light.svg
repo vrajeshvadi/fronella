@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 24"><g fill="none" stroke="#CFEFF1" stroke-width="1">
+<line x1="0" y1="12" x2="92" y2="12"/><line x1="148" y1="12" x2="240" y2="12"/>
+<path d="M120,2 Q130,12 120,22 Q110,12 120,2Z"/><path d="M108,12 Q114,6 120,12 Q114,18 108,12Z"/><path d="M132,12 Q126,6 120,12 Q126,18 132,12Z"/></g>
+<g fill="#CFEFF1"><circle cx="100" cy="12" r="2"/><circle cx="140" cy="12" r="2"/><circle cx="92" cy="12" r="1.2"/><circle cx="148" cy="12" r="1.2"/></g></svg>
