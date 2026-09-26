@@ -1,5 +1,9 @@
 // Product list. Edit names, prices and descriptions here.
-// price is in rupees per kg. Photos live in assets/img/sweets/<slug>.jpg
+// price      = rupees per kg
+// pieceGrams = average weight of one piece in grams. Used by the gift box builder
+//              to estimate the price of each piece. These are starting estimates:
+//              weigh a few pieces of each sweet and update the numbers.
+// Photos live in assets/img/sweets/<slug>.jpg
 window.FAMILIES = [
  {
   "id": "katri",
@@ -47,7 +51,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1000,
   "desc": "Classic cashew diamonds finished with silver varq.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Chocolate Kaju Katri",
@@ -57,7 +62,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1100,
   "desc": "Cashew katri topped with a rippled chocolate layer.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Pista Kaju Katri",
@@ -67,7 +73,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1100,
   "desc": "Two-layer cashew and pistachio katri with silver varq.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Kesar Kaju Katri",
@@ -77,7 +84,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1100,
   "desc": "Saffron cashew layer under a smooth cream top.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Gulab Kaju Katri",
@@ -87,7 +95,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1100,
   "desc": "Rose-scented cashew layer with a creamy top.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Strawberry Kaju Katri",
@@ -97,7 +106,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1100,
   "desc": "Strawberry cashew diamonds studded with nuts.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Biscoff Kaju Katri",
@@ -107,7 +117,8 @@ window.SWEETS = [
   "kind": "Kaju Katri",
   "price": 1200,
   "desc": "Cashew katri blended with caramel Biscoff.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 12
  },
  {
   "name": "Kaju Anjeer Roll",
@@ -117,7 +128,8 @@ window.SWEETS = [
   "kind": "Kaju Roll",
   "price": 1100,
   "desc": "Silver-wrapped cashew roll with a fig centre.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 20
  },
  {
   "name": "Kaju Kesar Roll",
@@ -127,7 +139,8 @@ window.SWEETS = [
   "kind": "Kaju Roll",
   "price": 1100,
   "desc": "Cashew roll with a saffron-infused core.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 20
  },
  {
   "name": "Kaju Blueberry Roll",
@@ -137,7 +150,8 @@ window.SWEETS = [
   "kind": "Kaju Roll",
   "price": 1100,
   "desc": "Cashew roll with a blueberry filling.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 20
  },
  {
   "name": "Kaju Pista Roll",
@@ -147,7 +161,8 @@ window.SWEETS = [
   "kind": "Kaju Roll",
   "price": 1100,
   "desc": "Cashew roll with a pistachio centre.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 20
  },
  {
   "name": "Exotica",
@@ -157,7 +172,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1100,
   "desc": "Creamy cashew squares with mixed dry fruits.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Date Bites",
@@ -167,7 +183,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1100,
   "desc": "Dates bound with crunchy almonds and cashews.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Creamy Ball",
@@ -177,7 +194,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1100,
   "desc": "Creamy dry-fruit balls crowned with pistachio.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Biscoff Basket",
@@ -187,7 +205,8 @@ window.SWEETS = [
   "kind": "Fusion",
   "price": 1280,
   "desc": "Nut-crusted cups with a Biscoff cream centre.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Hazelnut Blast",
@@ -197,7 +216,8 @@ window.SWEETS = [
   "kind": "Fusion",
   "price": 1280,
   "desc": "Cashew cups with a chocolate-hazelnut filling.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Kaju Cranberry Delight",
@@ -207,7 +227,8 @@ window.SWEETS = [
   "kind": "Fusion",
   "price": 1280,
   "desc": "Cranberry-studded cashew squares.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Gulab Shahi",
@@ -217,7 +238,8 @@ window.SWEETS = [
   "kind": "Shahi",
   "price": 1280,
   "desc": "Whole dry fruits set with rose petals.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kaju Shahi",
@@ -227,7 +249,8 @@ window.SWEETS = [
   "kind": "Shahi",
   "price": 1280,
   "desc": "Rich cashew slab loaded with mixed nuts.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Pista Shahi",
@@ -237,7 +260,8 @@ window.SWEETS = [
   "kind": "Shahi",
   "price": 1280,
   "desc": "Pistachio-packed slab with a creamy top.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Khazana",
@@ -247,7 +271,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1280,
   "desc": "Pistachio pods packed with crushed nuts.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Pista Madhur",
@@ -257,7 +282,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Layered pistachio and dry-fruit slice.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Cream Kesar Dry Fruit",
@@ -267,7 +293,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Saffron dry-fruit base with a cream topping.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kaju Pistachio",
@@ -277,7 +304,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Cashew and pistachio layers with a cream finish.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Almond Saffron",
@@ -287,7 +315,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Saffron almond layer under a cream top.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Strawberry Piña",
@@ -297,7 +326,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Strawberry and pineapple layers with nuts and cream.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Rose Delight",
@@ -307,7 +337,8 @@ window.SWEETS = [
   "kind": "Layered",
   "price": 1280,
   "desc": "Rose dry-fruit layers finished with petals.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Roasted Badam",
@@ -317,7 +348,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1280,
   "desc": "A crunchy slab of roasted almonds.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Anjeer Bite",
@@ -327,7 +359,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1280,
   "desc": "Fig and dry-fruit square topped with pistachio.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Honey Ball",
@@ -337,7 +370,8 @@ window.SWEETS = [
   "kind": "Signature",
   "price": 1280,
   "desc": "Honey-glazed clusters of almonds and cashews.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kaju Strawberry Pizza",
@@ -347,7 +381,8 @@ window.SWEETS = [
   "kind": "Kaju Pizza",
   "price": 1280,
   "desc": "Cashew wedges with a strawberry-nut filling.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kaju Diamond Pizza",
@@ -357,7 +392,8 @@ window.SWEETS = [
   "kind": "Kaju Pizza",
   "price": 1280,
   "desc": "Pistachio-dusted cashew wedges with a nut filling.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kaju Strawberry Cream",
@@ -367,7 +403,8 @@ window.SWEETS = [
   "kind": "Fusion",
   "price": 1280,
   "desc": "Strawberry dry-fruit rounds with a cream crown.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Sugar-Free Badam",
@@ -377,7 +414,8 @@ window.SWEETS = [
   "kind": "Sugar-free",
   "price": 1400,
   "desc": "Sugar-free almond and dry-fruit slab.",
-  "sugarFree": true
+  "sugarFree": true,
+  "pieceGrams": 25
  },
  {
   "name": "Kesar Badam Ladoo",
@@ -387,7 +425,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 540,
   "desc": "Saffron ladoo coated with sliced almonds.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "Pista Ladoo",
@@ -397,7 +436,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 540,
   "desc": "Pistachio ladoo rolled in crushed pista.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "Brij Ladoo",
@@ -407,7 +447,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 520,
   "desc": "Coconut-dusted ladoo with raisins.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "Magaj Ladoo",
@@ -417,7 +458,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 480,
   "desc": "Traditional gram-flour ladoo made with ghee.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "Chocolate Ladoo",
@@ -427,7 +469,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 500,
   "desc": "Rich ladoo covered in chocolate chips.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "Motichoor Ladoo",
@@ -437,7 +480,8 @@ window.SWEETS = [
   "kind": "Ladoo",
   "price": 320,
   "desc": "Fine boondi ladoo, the festive classic.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 35
  },
  {
   "name": "White Penda",
@@ -447,7 +491,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 420,
   "desc": "Soft, milky white penda.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Mawa Penda",
@@ -457,7 +502,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 440,
   "desc": "Caramel-toned penda made from rich mawa.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Rajwadi Penda",
@@ -467,7 +513,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 440,
   "desc": "Royal-style penda with a grainy texture.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Chocolate Penda",
@@ -477,7 +524,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 440,
   "desc": "Rich cocoa penda.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kesar Penda",
@@ -487,7 +535,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 480,
   "desc": "Saffron-infused penda.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Thabdi Penda",
@@ -497,7 +546,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 480,
   "desc": "Thabdi-style penda with a grainy bite.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kesar Badam Penda",
@@ -507,7 +557,8 @@ window.SWEETS = [
   "kind": "Penda",
   "price": 540,
   "desc": "Saffron penda with almond.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Chocolate Burfi",
@@ -517,7 +568,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 420,
   "desc": "Chocolate layer over classic milk burfi.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Mango Burfi",
@@ -527,7 +579,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 420,
   "desc": "Mango layer over milk burfi.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Thrivan Burfi",
@@ -537,7 +590,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 460,
   "desc": "Three layers: pistachio, chocolate and rose.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Bournvita Burfi",
@@ -547,7 +601,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 460,
   "desc": "Layered malt burfi topped with a cherry.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "GemNut Burfi",
@@ -557,7 +612,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 460,
   "desc": "Milk burfi with tutti-frutti and nuts.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Butterscotch Burfi",
@@ -567,7 +623,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 460,
   "desc": "Butterscotch milk burfi with almond flakes.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Mawa Milk Burfi",
@@ -577,7 +634,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 460,
   "desc": "Mawa burfi with chocolate chips and pistachio.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kesar Anjeer Burfi",
@@ -587,7 +645,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 480,
   "desc": "Saffron burfi layered on a fig base.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Pista Burfi",
@@ -597,7 +656,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 500,
   "desc": "Pistachio burfi topped with slivered pista.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kesar Badam Burfi",
@@ -607,7 +667,8 @@ window.SWEETS = [
   "kind": "Burfi",
   "price": 500,
   "desc": "Saffron burfi with almonds.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Kalakand",
@@ -617,7 +678,8 @@ window.SWEETS = [
   "kind": "Kalakand",
   "price": 480,
   "desc": "Moist, grainy milk kalakand with pistachio.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Biscoff Kalakand",
@@ -627,7 +689,8 @@ window.SWEETS = [
   "kind": "Kalakand",
   "price": 600,
   "desc": "Kalakand with a Biscoff crumb top.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Malai Cake",
@@ -637,7 +700,8 @@ window.SWEETS = [
   "kind": "Milk Cake",
   "price": 520,
   "desc": "Soft malai cake topped with pistachio.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Marshall Cake",
@@ -647,7 +711,8 @@ window.SWEETS = [
   "kind": "Milk Cake",
   "price": 460,
   "desc": "Two-layer milk cake, saffron and caramel.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Chandni Cake",
@@ -657,7 +722,8 @@ window.SWEETS = [
   "kind": "Milk Cake",
   "price": 460,
   "desc": "Layered pistachio and saffron milk cake.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Rasbihari",
@@ -667,7 +733,8 @@ window.SWEETS = [
   "kind": "Milk Cake",
   "price": 460,
   "desc": "Pistachio layer on a milk-cake base.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Thabdi",
@@ -677,7 +744,8 @@ window.SWEETS = [
   "kind": "Classic",
   "price": 460,
   "desc": "Classic Gujarati thabdi with nuts.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 30
  },
  {
   "name": "Topra Paak",
@@ -687,7 +755,8 @@ window.SWEETS = [
   "kind": "Classic",
   "price": 420,
   "desc": "Coconut paak with a soft bite.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 25
  },
  {
   "name": "Dry Fruit Ghari",
@@ -697,6 +766,7 @@ window.SWEETS = [
   "kind": "Classic",
   "price": 640,
   "desc": "Surat-style ghari filled with dry fruits.",
-  "sugarFree": false
+  "sugarFree": false,
+  "pieceGrams": 50
  }
 ];

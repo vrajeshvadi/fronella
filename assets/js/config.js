@@ -16,5 +16,13 @@ window.SHOP = {
   // Instagram username without @. Example: "fronella.sweets"
   instagram: "",
   // FSSAI licence number
-  fssai: ""
+  fssai: "",
+
+  // Gift box sizes for the "Build a box" page.
+  // pieces = how many sweets fit, price = cost of the empty box in rupees (0 = not shown).
+  boxes: [
+    { name: "Small", pieces: 9, price: 0 },
+    { name: "Medium", pieces: 16, price: 0 },
+    { name: "Large", pieces: 25, price: 0 }
+  ]
 };
