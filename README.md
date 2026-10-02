@@ -1,58 +1,85 @@
-# Fronella by Khodiyar Dairy Farm website
+# Fronella — By Khodiyaar Dairy Farm
 
-A static website for the shop: the Diwali 2026 sweet collection with photos, prices, a price list, gift boxes, and a download link for the PDF catalogue. It needs no server, database or build step, so it runs on GitHub Pages for free.
+Static website (HTML, CSS, JavaScript). No backend, no admin panel, no build step, no prices.
+Pages: Home, Sweets, Gift Boxes, Bulk Orders, About, Contact. English + Gujarati.
 
-## Files
+---
 
-| File or folder | What it holds |
-| --- | --- |
-| `index.html` | The main page |
-| `box.html` | The "Build a box" page where customers make their own gift box |
-| `assets/js/config.js` | Your phone, WhatsApp, address, hours, Instagram, FSSAI number and gift box sizes |
-| `assets/js/data.js` | Every sweet: name, description, price per kg, family, weight of one piece |
-| `assets/css/style.css` | Colours, fonts and layout |
-| `assets/img/sweets/` | One photo per sweet, named after the sweet |
-| `catalogue/` | The PDF catalogue visitors can download |
+## 1. Put it on GitHub Pages
 
-## 1. Add your contact details
+1. Create a new repository on GitHub, for example `fronella`.
+2. Upload **everything in this folder** (keep the folder structure, including the empty-looking `.nojekyll` file).
+   - On github.com: *Add file → Upload files* → drag the contents in → *Commit changes*.
+3. Go to **Settings → Pages**. Under *Build and deployment* pick **Deploy from a branch**, branch **main**, folder **/ (root)**, then **Save**.
+4. After a minute the site is live at `https://<your-username>.github.io/fronella/`.
+5. Optional custom domain: in *Settings → Pages → Custom domain* enter e.g. `www.fronella.in`, then add the DNS records GitHub shows you at your domain provider.
 
-Open `assets/js/config.js` and fill in the values, for example:
+To preview on your own computer, open the folder in a terminal and run `python3 -m http.server`, then visit `http://localhost:8000`.
 
-```js
-whatsapp: "919876543210",
-phone: "+91 98765 43210",
-address: "Shop 4, Example Road\nVadodara, Gujarat",
+---
+
+## 2. Everyday edits (all in `assets/js/`)
+
+Edit the file on GitHub (click the file → pencil icon → *Commit changes*). The site updates in about a minute.
+
+| What you want to change | File | What to edit |
+|---|---|---|
+| Phone, WhatsApp, address, hours | `data.js` | `FRONELLA.SITE` |
+| Gift box sizes (250 g / 500 g / 1 kg) | `data.js` | `FRONELLA.BOX_SIZES` — `grams` is the box capacity |
+| Add / remove / rename a sweet | `products.js` | copy an existing `{ … },` block |
+| Mark a sweet out of stock | `products.js` | `available: false` |
+| Hide a sweet from the gift box builder | `products.js` | `giftBox: false` |
+| Weight of one piece (used by the box builder) | `products.js` | `pieceWeight: 10` (grams) |
+| Show a sweet on the Home page | `products.js` | `featured: true` |
+| Ingredients / shelf life / storage | `products.js` | `ingredients`, `shelfLifeDays`, `storage` |
+| Ingredient & allergen names | `data.js` | `FRONELLA.INGREDIENTS`, `FRONELLA.ALLERGENS` |
+| Any button / heading wording | `i18n.js` | same key in both `en` and `gu` |
+
+Always keep commas between blocks and quotes around text — a missing comma stops the page from loading.
+
+### Adding photos
+1. Crop out any printed prices from catalogue photos.
+2. Save as JPG (about 1200 × 1000 px, under ~250 KB) into `assets/img/products/`, named after the sweet's `id`, e.g. `kaju-katri-1.jpg`, `kaju-katri-2.jpg`.
+3. In `products.js` set `images: ["assets/img/products/kaju-katri-1.jpg", "assets/img/products/kaju-katri-2.jpg"]`.
+   The first photo is used on cards; all photos appear in the popup gallery.
+   Sweets with `images: []` show a built-in illustration instead.
+
+### Recipe details are marked "general guidance"
+Every sweet currently has `verified: false`, so its popup shows a note that ingredients, allergens and shelf life
+are typical for that kind of sweet, not confirmed for your recipe. When the kitchen confirms a sweet's details,
+correct them in `products.js` and set `verified: true` — the note disappears for that sweet.
+
+---
+
+## 3. Before going live — please check
+
+- **Piece weights** in `products.js` are estimates (e.g. kaju katri 10 g, burfi 25 g, ladoo 30–35 g, ghari 50 g). Weigh a few pieces and update them so the gift box builder is accurate.
+- **House specials** — Thrivan Burfi, Rasbihari, Marshall Cake, Chandni Cake, Exotica, Brij Ladoo — have deliberately general descriptions. Replace them with your own.
+- **Rasbihari** is set to `giftBox: false` (very perishable). Change it if you do pack it in boxes.
+- **Spelling**: the logo artwork says *Khodiyaar*, the printed box says *Khodiyar*. The site uses *Khodiyaar*; change `byline` in `data.js` if needed.
+- **About page** text (`about.*` keys in `i18n.js`) is a first draft — adjust it to your real story.
+- **Google Maps pin**: the map searches "Aryanagar Main Road, Pedak Road, Rajkot". For an exact pin, replace the `iframe src` in `contact.html` with the embed link from Google Maps → Share → Embed a map.
+
+---
+
+## 4. How the gift box builder works
+
+- Capacity = selected size in `BOX_SIZES`; each piece adds its `pieceWeight`.
+- The **+** button refuses a piece that would exceed the box, and you can't switch to a smaller box than the current contents.
+- Partly filled boxes are allowed; customers choose the number of identical boxes, an event date and notes.
+- The selection is saved in the visitor's own browser (same device only) and sent to WhatsApp as a ready-made message.
+
+## 5. Folder map
+
 ```
-
-Once `whatsapp` is filled in, every sweet gets an "Order on WhatsApp" link and the order and gift box sections get WhatsApp buttons. Anything left as `""` stays hidden.
-
-## 2. Set up the gift box builder
-
-Customers pick a box size, add sweets piece by piece and see an estimated price. They can then send the box to you on WhatsApp, copy the details, or copy a link that opens the same box.
-
-The price of each piece is worked out as **price per kg × weight of one piece**. Two things to check:
-
-- **Piece weights.** Every sweet in `assets/js/data.js` has `pieceGrams`, the average weight of one piece. The numbers in the file are starting estimates (for example 12 g for kaju katri, 35 g for a ladoo). Weigh a few pieces of each sweet and update them so the prices are accurate.
-- **Box sizes and prices.** In `assets/js/config.js`, `boxes` lists the sizes (9, 16 and 25 pieces to start). Set `price` to the cost of the empty box, or leave it at `0` to show only the sweets' price. You can rename sizes, change the number of pieces, or add more sizes.
-
-## 3. Put it on GitHub Pages
-
-1. Sign in at github.com and create a new repository, for example `fronella`. Make it **Public**.
-2. On the new repository page, click **uploading an existing file**.
-3. Unzip this folder on your computer and drag everything inside it (`index.html`, `box.html`, `assets`, `catalogue`, `README.md`, `.nojekyll`) into the upload area. Click **Commit changes**.
-4. Go to **Settings → Pages**. Under **Build and deployment**, set Source to **Deploy from a branch**, Branch to **main** and folder to **/ (root)**. Click **Save**.
-5. After a minute or two the site is live at `https://YOUR-USERNAME.github.io/fronella/`.
-
-The `.nojekyll` file is hidden on some computers. If it doesn't upload, the site still works.
-
-### Using your own domain (optional)
-
-In **Settings → Pages → Custom domain**, enter your domain (for example `www.fronella.in`) and follow GitHub's instructions to add a DNS record with your domain provider.
-
-## 4. Changing sweets or prices
-
-- **Price or description:** edit the sweet in `assets/js/data.js` and upload the file again.
-- **New sweet:** add an entry in `data.js` (including `pieceGrams`) and put a 4:3 photo named `<slug>.jpg` in `assets/img/sweets/`. The `slug` is the name in lowercase with dashes, for example `kaju-katri`.
-- **New catalogue:** replace the PDF in `catalogue/`, keeping the same file name.
-
-On GitHub you can edit a file in the browser: open it, click the pencil icon, make the change and click **Commit changes**. The site updates within a couple of minutes.
+index.html  sweets.html  gift-boxes.html  bulk-orders.html  about.html  contact.html
+assets/css/style.css        design (colours at the top: #0D6582 / #F0D778)
+assets/js/data.js           contact info, box sizes, categories, ingredients
+assets/js/products.js       all 65 sweets
+assets/js/i18n.js           English + Gujarati interface text
+assets/js/art.js            built-in sweet illustrations
+assets/js/main.js           shared behaviour (language, popup, WhatsApp)
+assets/js/catalog.js        Sweets page search + filters
+assets/js/giftbox.js        gift box builder
+assets/img/                 logo, favicon, box photos; products/ for sweet photos
+```
