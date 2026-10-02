@@ -1,4 +1,4 @@
-# Fronella — By Khodiyar Dairy Farm
+# Fronella - By Khodiyar Dairy Farm
 
 Static website (HTML, CSS, JavaScript). No backend, no admin panel, no build step, no prices.
 Pages: Home, Sweets, Gift Boxes, Bulk Orders, About, Contact. English + Gujarati.
@@ -25,7 +25,7 @@ Edit the file on GitHub (click the file → pencil icon → *Commit changes*). T
 | What you want to change | File | What to edit |
 |---|---|---|
 | Phone, WhatsApp, address, hours | `data.js` | `FRONELLA.SITE` |
-| Gift box sizes (250 g / 500 g / 1 kg) | `data.js` | `FRONELLA.BOX_SIZES` — `grams` is the box capacity |
+| Gift box sizes (250 g / 500 g / 1 kg) | `data.js` | `FRONELLA.BOX_SIZES` - `grams` is the box capacity |
 | Add / remove / rename a sweet | `products.js` | copy an existing `{ … },` block |
 | Mark a sweet out of stock | `products.js` | `available: false` |
 | Hide a sweet from the gift box builder | `products.js` | `giftBox: false` |
@@ -35,7 +35,7 @@ Edit the file on GitHub (click the file → pencil icon → *Commit changes*). T
 | Ingredient & allergen names | `data.js` | `FRONELLA.INGREDIENTS`, `FRONELLA.ALLERGENS` |
 | Any button / heading wording | `i18n.js` | same key in both `en` and `gu` |
 
-Always keep commas between blocks and quotes around text — a missing comma stops the page from loading.
+Always keep commas between blocks and quotes around text - a missing comma stops the page from loading.
 
 ### Adding photos
 1. Crop out any printed prices from catalogue photos.
@@ -47,17 +47,17 @@ Always keep commas between blocks and quotes around text — a missing comma sto
 ### Recipe details are marked "general guidance"
 Every sweet currently has `verified: false`, so its popup shows a note that ingredients, allergens and shelf life
 are typical for that kind of sweet, not confirmed for your recipe. When the kitchen confirms a sweet's details,
-correct them in `products.js` and set `verified: true` — the note disappears for that sweet.
+correct them in `products.js` and set `verified: true` - the note disappears for that sweet.
 
 ---
 
-## 3. Before going live — please check
+## 3. Before going live - please check
 
 - **Piece weights** in `products.js` are estimates (e.g. kaju katri 10 g, burfi 25 g, ladoo 30-35 g, ghari 50 g). Weigh a few pieces and update them so the gift box builder is accurate.
-- **House specials** — Thrivan Burfi, Rasbihari, Marshall Cake, Chandni Cake, Exotica, Brij Ladoo — have deliberately general descriptions. Replace them with your own.
+- **House specials** - Thrivan Burfi, Rasbihari, Marshall Cake, Chandni Cake, Exotica, Brij Ladoo - have deliberately general descriptions. Replace them with your own.
 - **Rasbihari** is set to `giftBox: false` (very perishable). Change it if you do pack it in boxes.
 - **Spelling**: the logo artwork says *Khodiyar*, the printed box says *Khodiyar*. The site uses *Khodiyar*; change `byline` in `data.js` if needed.
-- **About page** text (`about.*` keys in `i18n.js`) is a first draft — adjust it to your real story.
+- **About page** text (`about.*` keys in `i18n.js`) is a first draft - adjust it to your real story.
 - **Google Maps pin**: the map searches "Aryanagar Main Road, Pedak Road, Rajkot". For an exact pin, replace the `iframe src` in `contact.html` with the embed link from Google Maps → Share → Embed a map.
 
 ---

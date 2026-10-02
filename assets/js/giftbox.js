@@ -1,5 +1,5 @@
 /* =====================================================================
-   FRONELLA — Custom gift box builder
+   FRONELLA - Custom gift box builder
    Capacity comes from data.js → BOX_SIZES, piece weights from products.js.
    Selection is saved on this device (localStorage) automatically.
    ===================================================================== */
@@ -80,7 +80,7 @@ document.addEventListener("fronella:ready", () => {
         <button type="button" class="thumb" data-open="${p.id}" aria-label="${esc(t("cta.view"))}: ${esc(L(p.name))}">${thumb(p)}</button>
         <div><div class="nm">${esc(L(p.name))}</div><div class="wt">${p.available ? esc(t("card.perPiece", { g: p.pieceWeight })) : esc(t("card.unavailable"))}</div></div>
         <div class="stepper" role="group" aria-label="${esc(L(p.name))}">
-          <button type="button" data-dec aria-label="−">−</button><output aria-live="polite">${n}</output><button type="button" data-inc aria-label="+">+</button>
+          <button type="button" data-dec aria-label="-">-</button><output aria-live="polite">${n}</output><button type="button" data-inc aria-label="+">+</button>
         </div></div>`;
     }).join("") : `<p class="empty">${esc(t("sweets.empty"))}</p>`;
     refreshSteppers();

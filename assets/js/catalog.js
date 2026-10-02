@@ -1,5 +1,5 @@
 /* =====================================================================
-   FRONELLA — Sweets page: search + category filters
+   FRONELLA - Sweets page: search + category filters
    ===================================================================== */
 document.addEventListener("fronella:ready", () => {
   const Fr = window.Fronella, F = window.FRONELLA, { t, L, esc } = Fr;
