@@ -13,7 +13,7 @@ FRONELLA.I18N = {
     "cta.call": "Call Now", "cta.enquire": "Enquire on WhatsApp", "cta.view": "View details",
     "cta.addBox": "Add to gift box", "cta.viewAll": "View all sweets", "cta.bulk": "Plan a Bulk Order",
     "cta.directions": "Get directions", "cta.about": "Our story",
-    "top.hours": "Open daily 6:00 am – 10:30 pm",
+    "top.hours": "Open daily 6:00 am - 10:30 pm",
 
     "home.eyebrow": "Handcrafted in Rajkot",
     "home.title": "Royal sweets, rooted in pure dairy.",
@@ -26,7 +26,7 @@ FRONELLA.I18N = {
     "home.bulk.eyebrow": "Bulk Orders", "home.bulk.title": "Sweetness for every grand occasion",
     "home.bulk.lead": "Weddings, festivals, corporate gifting and community events — we plan quantities, assortments and packing with you.",
     "home.about.eyebrow": "About Fronella", "home.about.title": "A dairy family's devotion to mithai",
-    "home.about.lead": "Fronella is the sweets house of Khodiyaar Dairy Farm in Rajkot. Our sweets begin with milk, mawa and ghee — the heart of every great Indian mithai — and are finished with premium dry fruits and a royal touch.",
+    "home.about.lead": "Fronella is the sweets house of Khodiyar Dairy Farm in Rajkot. Our sweets begin with milk, mawa and ghee — the heart of every great Indian mithai — and are finished with premium dry fruits and a royal touch.",
     "home.visit.title": "Visit our shop in Rajkot",
 
     "val.dairy": "Dairy at heart", "val.dairy.d": "Milk, mawa and ghee are the foundation of our sweets.",
@@ -95,7 +95,7 @@ FRONELLA.I18N = {
     "f.location": "Delivery area / city", "f.notes": "Anything else?", "f.send": "Send enquiry on WhatsApp",
     "f.required": "Please fill in your name and occasion.", "f.choose": "Choose…",
 
-    "about.title": "About Fronella", "about.lead": "The sweets house of Khodiyaar Dairy Farm, Rajkot.",
+    "about.title": "About Fronella", "about.lead": "The sweets house of Khodiyar Dairy Farm, Rajkot.",
     "about.story.title": "From the dairy to the mithai box",
     "about.story.p1": "Every great Indian sweet begins with good milk. As a dairy farm family, milk, mawa and ghee have always been at the centre of what we do — Fronella is how we bring that devotion to your celebrations.",
     "about.story.p2": "Our range spans the Kathiyawadi classics we grew up with — thabdi, pendas, magaj and milk cakes — alongside royal kaju katri, kaju rolls and modern fusion creations with Biscoff, berries and hazelnut.",
@@ -126,7 +126,7 @@ FRONELLA.I18N = {
     "cta.call": "કૉલ કરો", "cta.enquire": "વોટ્સએપ પર પૂછો", "cta.view": "વિગત જુઓ",
     "cta.addBox": "ગિફ્ટ બોક્સમાં ઉમેરો", "cta.viewAll": "બધી મીઠાઈ જુઓ", "cta.bulk": "બલ્ક ઓર્ડર આપો",
     "cta.directions": "રસ્તો જુઓ", "cta.about": "અમારી વાત",
-    "top.hours": "દરરોજ સવારે 6:00 – રાત્રે 10:30",
+    "top.hours": "દરરોજ સવારે 6:00 - રાત્રે 10:30",
 
     "home.eyebrow": "રાજકોટમાં હાથે બનાવેલી",
     "home.title": "શુદ્ધ ડેરીમાંથી બનેલી શાહી મીઠાઈ.",

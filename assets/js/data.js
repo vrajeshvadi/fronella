@@ -2,11 +2,11 @@
    FRONELLA — SITE DATA  (edit this file to manage the website)
    ---------------------------------------------------------------------
    Everything the shop owner normally changes lives here:
-     • SITE        – phone, WhatsApp, address, hours
-     • BOX_SIZES   – gift box sizes (grams)
-     • CATEGORIES  – sweet categories
-     • INGREDIENTS – ingredient names in English + Gujarati
-     • PRODUCTS    – every sweet (in products.js)
+     • SITE        - phone, WhatsApp, address, hours
+     • BOX_SIZES   - gift box sizes (grams)
+     • CATEGORIES  - sweet categories
+     • INGREDIENTS - ingredient names in English + Gujarati
+     • PRODUCTS    - every sweet (in products.js)
 
    After editing, save the file and refresh the page. No build step.
    NEVER add prices anywhere — the website is price-free by design.
@@ -16,7 +16,7 @@ window.FRONELLA = window.FRONELLA || {};
 
 FRONELLA.SITE = {
   brand: "Fronella",
-  byline: { en: "By Khodiyaar Dairy Farm", gu: "ખોડિયાર ડેરી ફાર્મ દ્વારા" },
+  byline: { en: "By Khodiyar Dairy Farm", gu: "ખોડિયાર ડેરી ફાર્મ દ્વારા" },
   phoneDisplay: "+91 96380 69311",
   phoneDial: "+919638069311",        // used for the Call button
   whatsapp: "919638069311",          // country code + number, digits only
@@ -24,7 +24,7 @@ FRONELLA.SITE = {
     en: "Aryanagar Main Road, Aryanagar Society, Pedak Road, Rajkot, Gujarat",
     gu: "આર્યનગર મેઇન રોડ, આર્યનગર સોસાયટી, પેડક રોડ, રાજકોટ, ગુજરાત"
   },
-  hours: { en: "Open daily, 6:00 am – 10:30 pm", gu: "દરરોજ ખુલ્લું, સવારે 6:00 – રાત્રે 10:30" },
+  hours: { en: "Open daily, 6:00 am - 10:30 pm", gu: "દરરોજ ખુલ્લું, સવારે 6:00 - રાત્રે 10:30" },
   mapQuery: "Aryanagar Main Road, Pedak Road, Rajkot, Gujarat"
 };
 
